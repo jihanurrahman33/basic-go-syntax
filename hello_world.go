@@ -34,9 +34,11 @@ func main(){
 		fmt.Println("Your age is greater 18")
 	}else if age<18{
 		fmt.Println("your age is less than 18")
+	}else if age==18{
+		fmt.Println("your age is equla to 18")
 	}else{
 		fmt.Println("Your age is",age)
 	}
-	
+
 
 }
