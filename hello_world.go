@@ -21,7 +21,7 @@ func main(){
 	fmt.Println(x);
 	//syntax for boolean value
 	isDone:=true
-	isDone=false
+	// isDone=false
 	//fmt println package usage
 	fmt.Println(isDone)
 	//syntax constant in golang
@@ -35,10 +35,57 @@ func main(){
 	}else if age<18{
 		fmt.Println("your age is less than 18")
 	}else if age==18{
-		fmt.Println("your age is equla to 18")
+		fmt.Println("your age is equal to 18")
 	}else{
 		fmt.Println("Your age is",age)
 	}
+	//not syntax with bool
+	isSuccess:=true
+	if !isSuccess{
+		fmt.Println("Failed")
+	}else{
+		fmt.Println("Success")
+	}
+	//or and syntax
+	if (isDone && isSuccess){
+		fmt.Println("Success")
+	}else{
+		fmt.Println("Failed")
+	}
+
+	value1:=10
+	value2:=20
+	if(value1==10 || value2==10){
+		fmt.Println(value1)
+	}
+
+	//switch case syntax
+	switch value1{
+	case 1:
+		fmt.Println("Value is ",value1)
+	case 2,3:
+		fmt.Println("Value is 2,3")
+	case value2:
+		fmt.Println("value is ",value2)
+	case value1:
+		fmt.Println("Value is ",value1)
+	default:
+		fmt.Println("Default Value")
+
+	}
+	//sum of two number
+	num1:=10
+	num2:=20
+	sum:=num1+num2
+	fmt.Println("sum of num1 and num 2 ",sum)
+
+	add(10,20)
+	add(value1,value2)
 
 
+
+}
+func add(num1 int,num2 int){
+	sum:=num1+num2
+	fmt.Println(sum)
 }
