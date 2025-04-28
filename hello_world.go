@@ -79,13 +79,15 @@ func main(){
 	sum:=num1+num2
 	fmt.Println("sum of num1 and num 2 ",sum)
 
-	add(10,20)
-	add(value1,value2)
+	sum1:=add(10,20)
+	sum2:=add(value1,value2)
+	fmt.Println(sum1)
+	fmt.Println(sum2)
 
 
 
 }
-func add(num1 int,num2 int){
+func add(num1 int,num2 int)int{
 	sum:=num1+num2
-	fmt.Println(sum)
+	return sum
 }
