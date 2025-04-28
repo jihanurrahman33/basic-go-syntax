@@ -83,8 +83,13 @@ func main(){
 	sum2:=add(value1,value2)
 	fmt.Println(sum1)
 	fmt.Println(sum2)
+	getValues(10,"Nishak")
 
 
+}
+//return multiple value using function
+func getValues(a int,b string)(int, string){
+	return a,b
 
 }
 func add(num1 int,num2 int)int{
