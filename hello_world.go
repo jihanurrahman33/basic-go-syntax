@@ -1,6 +1,16 @@
 package main
 
 import "fmt"
+
+//global scope
+var time=1600;
+var date=400;
+
+func div(x int,y int)(int){
+z:=x/y;
+return z
+}
+
 func main(){
 	fmt.Println("Hello World!");
 	a :=100;
@@ -9,6 +19,11 @@ func main(){
 	c:="Variable";
 	fmt.Println(c);
 	fmt.Println(b);
+	res:=div(time,date)
+	fmt.Println("result is :",res)
+
+	fmt.Println("Enter the value  ")
+	fmt.Scanln()
 	/*
 	Basic Data Types:
 	-int 
