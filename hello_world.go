@@ -1,9 +1,12 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"time"
+)
 
 //global scope
-var time=1600;
+
 var date=400;
 
 func div(x int,y int)(int){
@@ -13,14 +16,16 @@ return z
 
 func main(){
 	fmt.Println("Hello World!");
+	//local scope
 	a :=100;
+	//--
 	fmt.Println(a);
 	var b string="Hello Nishak";
 	c:="Variable";
 	fmt.Println(c);
 	fmt.Println(b);
-	res:=div(time,date)
-	fmt.Println("result is :",res)
+	// res:=div(time,date)
+	// fmt.Println("result is :",res)
 
 	fmt.Println("Enter the value  ")
 	fmt.Scanln()
@@ -99,6 +104,11 @@ func main(){
 	fmt.Println(sum1)
 	fmt.Println(sum2)
 	getValues(10,"Nishak")
+
+	//time syntax
+	fmt.Println("Welcome to time")
+	presentTime:=time.Now()
+	fmt.Println(presentTime.Format("01-02-2006 15:04:05 Monday"))
 
 
 }
