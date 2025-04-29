@@ -38,4 +38,10 @@ func main(){
 	fmt.Println(highScore)
 	//return bool value
 	fmt.Println(sort.IntsAreSorted(highScore))
+
+	//removing a value from slices
+	var courses=[]string{"dart","flutter","firebase"}
+	fmt.Println(courses)
+	courses=append(courses[:2],courses[2+1:]... )
+	fmt.Println(courses)
 }
